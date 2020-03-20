@@ -1,6 +1,8 @@
 const child = require('child_process')
 
-child.execFile('exe-win.exe', {
+const exeFile = 'plugbot-systray.exe'
+
+child.execFile(exeFile, {
   cwd: __dirname
 }, function (error, stdout, stderr) {
 
